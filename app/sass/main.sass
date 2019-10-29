@@ -1,0 +1,103 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+$bgc: #ffffff
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+.top-line
+	line-height: 55px
+	background-color: $bgc
+
+
+section 
+	width: 100%
+	height: 50vh
+	box-sizing: border-box
+	&.sec1 
+		background: url(https://images.unsplash.com/photo-1480365192324-83232188157e?ixlib=rb-0.3.5&s=49d223053e253418171da623e660a1ba&auto=format&fit=crop&w=1050&q=80) no-repeat center  / cover
+		background-attachment: fixed
+	
+	&.sec2 
+		background: url(https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?ixlib=rb-0.3.5&s=d5b622e2ea747f0eaa17e73a2040031a&auto=format&fit=crop&w=1027&q=80) no-repeat center / cover
+		background-attachment: fixed
+	
+	&.sec3
+		background:  url(https://images.unsplash.com/photo-1473294312123-83488e2f8e8f?ixlib=rb-0.3.5&s=69871c86b65827ddfd9685024c00e562&auto=format&fit=crop&w=1052&q=80)no-repeat center / cover
+		background-attachment: fixed
+	
+	&.sec4 
+		background: url(https://images.unsplash.com/photo-1496080940026-ce069e2759f5?auto=format&fit=crop&w=1349&q=80)no-repeat center / cover
+		background-attachment: fixed
+	
+
+.sec-text1 
+
+	padding: 4% 8%
+	height: 50vh
+	&__title 
+		margin: 0
+		padding: 0
+		font-size: 2em
+	
+	&__dsc 
+		font-size: 1em
+
+.sec-text2
+	padding: 4% 8%
+	height: 40vh
+	&__title 
+		margin: 0
+		padding: 0
+		font-size: 2em
+	
+	&__dsc 
+		font-size: 1em
+
+.sec-text3
+	padding: 4% 8%
+	height: 50vh
+	&__title 
+		margin: 0
+		padding: 0
+		font-size: 2em
+	
+	&__dsc 
+		font-size: 1em
+	
+
+@import "media" // Always at the end
